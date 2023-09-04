@@ -1,0 +1,13 @@
+import typing
+from ..animation.animation import Animation
+from _typeshed import Incomplete
+from manim.mobject.text.numbers import DecimalNumber
+
+class ChangingDecimal(Animation):
+    number_update_func: Incomplete
+    def __init__(self, decimal_mob: DecimalNumber, number_update_func: typing.Callable[[float], float], suspend_mobject_updating: bool | None = ..., **kwargs) -> None: ...
+    def check_validity_of_input(self, decimal_mob: DecimalNumber) -> None: ...
+    def interpolate_mobject(self, alpha: float) -> None: ...
+
+class ChangeDecimalToValue(ChangingDecimal):
+    def __init__(self, decimal_mob: DecimalNumber, target_number: int, **kwargs) -> None: ...

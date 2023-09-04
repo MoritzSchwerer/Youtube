@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/moritz/dev/youtube/zero-to-deeplearning/linear_regression/media/videos/manim/2160p60/partial_movie_files/WhatIsLr/139003253_1885181271_2358810818.mp4'
+file 'file:/home/moritz/dev/youtube/zero-to-deeplearning/linear_regression/media/videos/manim/2160p60/partial_movie_files/WhatIsLr/3120117191_4158225780_431139560.mp4'
+file 'file:/home/moritz/dev/youtube/zero-to-deeplearning/linear_regression/media/videos/manim/2160p60/partial_movie_files/WhatIsLr/3120117191_879497248_689331420.mp4'
+file 'file:/home/moritz/dev/youtube/zero-to-deeplearning/linear_regression/media/videos/manim/2160p60/partial_movie_files/WhatIsLr/3120117191_51972775_70159828.mp4'
+file 'file:/home/moritz/dev/youtube/zero-to-deeplearning/linear_regression/media/videos/manim/2160p60/partial_movie_files/WhatIsLr/3120117191_2468296833_3477961362.mp4'
+file 'file:/home/moritz/dev/youtube/zero-to-deeplearning/linear_regression/media/videos/manim/2160p60/partial_movie_files/WhatIsLr/3120117191_462276833_4158913414.mp4'
+file 'file:/home/moritz/dev/youtube/zero-to-deeplearning/linear_regression/media/videos/manim/2160p60/partial_movie_files/WhatIsLr/3120117191_4158225780_1151576257.mp4'

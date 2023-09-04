@@ -1,0 +1,5 @@
+LOGO_WHITE: str
+LOGO_GREEN: str
+LOGO_BLUE: str
+LOGO_RED: str
+LOGO_BLACK: str

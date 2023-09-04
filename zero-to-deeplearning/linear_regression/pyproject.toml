@@ -1,0 +1,10 @@
+[tool.pyright]
+typeCheckingMode = "basic"
+stubPath = "out"
+reportWildcardImportFromLibrary = false
+reportUndefinedVariable = false
+
+[tool.mypy]
+mypy_path = "out"
+
+

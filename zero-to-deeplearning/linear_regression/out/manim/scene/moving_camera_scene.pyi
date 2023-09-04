@@ -1,0 +1,6 @@
+from ..scene.scene import Scene
+from manim.animation.animation import Animation
+
+class MovingCameraScene(Scene):
+    def __init__(self, camera_class=..., **kwargs) -> None: ...
+    def get_moving_mobjects(self, *animations: Animation): ...

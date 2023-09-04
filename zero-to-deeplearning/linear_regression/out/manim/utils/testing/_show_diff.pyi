@@ -1,0 +1,3 @@
+import numpy as np
+
+def show_diff_helper(frame_number: int, frame_data: np.ndarray, expected_frame_data: np.ndarray, control_data_filename: str): ...

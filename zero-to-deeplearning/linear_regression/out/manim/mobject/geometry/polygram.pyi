@@ -1,0 +1,43 @@
+from manim.constants import *
+from manim.utils.color import *
+import numpy as np
+from _typeshed import Incomplete
+from colour import Color
+from manim.mobject.opengl.opengl_compatibility import ConvertToOpenGL
+from manim.mobject.types.vectorized_mobject import VMobject
+from typing import Iterable, Sequence
+
+class Polygram(VMobject, metaclass=ConvertToOpenGL):
+    def __init__(self, *vertex_groups: Iterable[Sequence[float]], color=..., **kwargs) -> None: ...
+    def get_vertices(self) -> np.ndarray: ...
+    def get_vertex_groups(self) -> np.ndarray: ...
+    def round_corners(self, radius: float = ...): ...
+
+class Polygon(Polygram):
+    def __init__(self, *vertices: Sequence[float], **kwargs) -> None: ...
+
+class RegularPolygram(Polygram):
+    def __init__(self, num_vertices: int, *, density: int = ..., radius: float = ..., start_angle: float | None = ..., **kwargs) -> None: ...
+
+class RegularPolygon(RegularPolygram):
+    def __init__(self, n: int = ..., **kwargs) -> None: ...
+
+class Star(Polygon):
+    def __init__(self, n: int = ..., *, outer_radius: float = ..., inner_radius: float | None = ..., density: int = ..., start_angle: float | None = ..., **kwargs) -> None: ...
+
+class Triangle(RegularPolygon):
+    def __init__(self, **kwargs) -> None: ...
+
+class Rectangle(Polygon):
+    def __init__(self, color: Color = ..., height: float = ..., width: float = ..., grid_xstep: float | None = ..., grid_ystep: float | None = ..., mark_paths_closed: bool = ..., close_new_points: bool = ..., **kwargs) -> None: ...
+
+class Square(Rectangle):
+    side_length: Incomplete
+    def __init__(self, side_length: float = ..., **kwargs) -> None: ...
+
+class RoundedRectangle(Rectangle):
+    corner_radius: Incomplete
+    def __init__(self, corner_radius: float = ..., **kwargs) -> None: ...
+
+class Cutout(VMobject, metaclass=ConvertToOpenGL):
+    def __init__(self, main_shape: VMobject, *mobjects: VMobject, **kwargs) -> None: ...
